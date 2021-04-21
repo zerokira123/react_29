@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@16.7.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"></script>
+    <script type="text/javascript">
+    const rootElement = document.getElementById('root')
+    const element = React.createElement('div', {
+        // children: 'Hello World',
+        //children: ['Hello World', ', Goodbye World'],
+        //children: react.createelement('span', null, 'Hello', 'World'),
+        classsName: 'container',
+    },
+    'Hello World', ', Goodbye World'
+    )
+    ReactDOM.render(element, rootElement)
+    // const element = document.createElement('div')
+    // element.textContent='Hello world'
+    // element.className = 'container'
+    // rootElement.appendChild(element)
+
+    </script>
+</body>
+</html>
